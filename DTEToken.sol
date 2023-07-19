@@ -1,19 +1,17 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/ERC20.sol)
-
 pragma solidity ^0.8.19;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 // ----------------------------------------------------------------------------
-// DriveToEarn Contract
+// DTEToken Contract
 // Name        : DriveToEarn
 // Symbol      : DTE
 // Decimals    : 18
 // InitialSupply : 10,000,000,000 DTE
 // ----------------------------------------------------------------------------
-contract DriveToEarn is ERC20, Ownable {
+contract DTEToken is ERC20, Ownable {
     uint constant _initial_supply = 10000000000 * (10**18);
 
     bool private _tokenLock;
